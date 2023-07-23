@@ -12,13 +12,7 @@ const galleryMarkup = galleryItems.map(item => `<li class="gallery__item">
 
 galleryEl.insertAdjacentHTML("afterbegin", galleryMarkup);
 
-galleryEl.addEventListener("click", onClickShowSelectedImg);
-
-function onClickShowSelectedImg(evt) {
-    evt.preventDefault();
-
-    const lightbox = new SimpleLightbox(".gallery a", {
-        captionsData: "alt",
-        captionDelay: 250,
-    });
-}
+const lightbox = new SimpleLightbox(".gallery a", {
+    captionsData: "alt",
+    captionDelay: 250,
+});
