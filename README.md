@@ -1,1 +1,1 @@
-# goit-js-hw-07
+A lightweight image gallery developed with vanilla JavaScript and enhanced by the SimpleLightbox library.
